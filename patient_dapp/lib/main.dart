@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:patient_dapp/pages/patent_card.dart';
+import './pages/bottom_nav.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +16,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const PatentCard();
-    
+    return const BottomNav();
   }
 }

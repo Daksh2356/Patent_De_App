@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'crowd_funding.dart';
 import 'package:line_icons/line_icons.dart';
+import './crowdfunding.dart';
+import './patent_card.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -15,6 +16,8 @@ class _BottomNavState extends State<BottomNav>
 
   List children = [
     const Crowdfunding(),
+    const Crowdfunding(),
+    const PatentCard(),
   ];
 
   @override
@@ -26,7 +29,6 @@ class _BottomNavState extends State<BottomNav>
         body: children[selectedItem],
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: const Color.fromARGB(255, 27, 26, 26),
-          //selectedItemColor: Color.fromARGB(255, 99, 246, 204),
           iconSize: 25,
           currentIndex: selectedItem,
           unselectedLabelStyle: const TextStyle(color: Colors.green),
