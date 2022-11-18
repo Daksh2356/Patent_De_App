@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './crowdfunding.dart';
+import 'crowd_funding.dart';
 import 'package:line_icons/line_icons.dart';
 
 class BottomNav extends StatefulWidget {
@@ -14,7 +14,7 @@ class _BottomNavState extends State<BottomNav>
   var selectedItem = 0;
 
   List children = [
-    Crowdfunding(),
+    const Crowdfunding(),
   ];
 
   @override
