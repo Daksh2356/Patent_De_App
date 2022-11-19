@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../widgets/crowdfunding_card.dart';
 import '../pages/profile_page.dart';
@@ -14,10 +15,10 @@ class _CrowdfundingState extends State<Crowdfunding> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromARGB(179, 0, 0, 0),
+      color: const Color.fromARGB(179, 0, 0, 0),
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(179, 0, 0, 0),
+          backgroundColor: const Color.fromARGB(179, 0, 0, 0),
           elevation: 0,
           actions: <Widget>[
             IconButton(
@@ -34,12 +35,15 @@ class _CrowdfundingState extends State<Crowdfunding> {
                 icon: const Icon(Icons.person))
           ],
           centerTitle: true,
-          title: const Text('ALL PATENTS'),
+          title: Text(
+            'ALL PATENTS',
+            style: GoogleFonts.comfortaa(),
+          ),
         ),
         backgroundColor: Colors.transparent,
         body: Container(
-          decoration: BoxDecoration(
-              color: Colors.white30,
+          decoration: const BoxDecoration(
+              color: Color.fromARGB(255, 18, 18, 18),
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20), topRight: Radius.circular(20))),
           child: ListView.builder(
