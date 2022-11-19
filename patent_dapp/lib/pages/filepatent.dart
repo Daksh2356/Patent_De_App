@@ -12,14 +12,12 @@ class Body extends StatelessWidget {
     // it will provide us total height and width
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      body: //theme: new ThemeData(scaffoldBackgroundColor: const Color(0xFFEFEFEF)),
-          SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Container(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                //decoration: BoxDecoration(color: Colors.black),
                 height: size.height * 0.4,
                 child: Stack(
                   children: <Widget>[
@@ -35,7 +33,6 @@ class Body extends StatelessWidget {
                         ),
                       ),
                     ),
-                    //Carbon Emission rate
                     Positioned(
                       bottom: 0,
                       right: 0,
@@ -81,23 +78,11 @@ class Body extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  // Container(
-                                  //   height: 50,
-                                  //   //padding: EdgeInsets.all(20),
-                                  //   // child: Image.asset(
-                                  //   //   "images/co2icon.png",
-                                  //   //   color: Colors.black,
-                                  //   // ),
-                                  // ),
                                   SizedBox(
                                     width: 20,
                                   )
                                 ],
                               ),
-
-                              // SizedBox(
-                              //   width: 100,
-                              // ),
                               Text(
                                 " FILE YOUR PROJECT",
                                 style: TextStyle(
@@ -105,42 +90,6 @@ class Body extends StatelessWidget {
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold),
                               ),
-                              // SizedBox(
-                              //   width: 10,
-                              // )
-                              // Row(
-                              //   children[
-                              //   Container(
-                              //     child: TextField(
-                              //       decoration: InputDecoration(
-                              //         border: OutlineInputBorder(),
-                              //       ),
-                              //     ),
-                              //   ),
-                              //   ],
-                              // ),
-                              // Container(
-                              //   child: TextField(
-                              //     decoration: InputDecoration(
-                              //       border: OutlineInputBorder(),
-                              //     ),
-                              //   ),
-                              // ),
-                              // TextField(
-                              //   decoration: InputDecoration(hintText: 'tonne',
-                              //   border: OutlineInputBorder(),),
-                              // ),
-
-                              // Column(
-                              //   children: [
-                              //     TextField(
-                              //       decoration: InputDecoration(
-                              //         hintText: 'Product Name',
-                              //         border: OutlineInputBorder(),
-                              //       ),
-                              //     ),
-                              //   ],
-                              // )
                             ],
                           ),
                         ),
@@ -165,41 +114,22 @@ class Body extends StatelessWidget {
                             decoration: InputDecoration(
                               hintText: 'Project Name',
                               border: OutlineInputBorder(),
-                              // suffixIcon: IconButton(
-                              //   onPressed: () {
-                              //     //clear whats currently in the textfield
-                              //     Null();
-                              //   },
-                              // ),
                             ),
                           ),
-                          // Text(
-                          //   "Product Name",
-                          //   style: Theme.of(context).textTheme.headline6,
-                          // )
                         ],
                       ),
                     ),
-                    //SizedBox(height: 64, width: 64,),
                   ],
                 ),
               ),
 
               Padding(
-                //height: 150,
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
                   maxLines: 4,
                   decoration: InputDecoration(
-                    //isDense: true,
                     hintText: 'Description',
                     border: OutlineInputBorder(),
-                    // suffixIcon: IconButton(
-                    //   onPressed: () {
-                    //     //clear whats currently in the textfield
-                    //     Null();
-                    //   },
-                    // ),
                   ),
                 ),
               ),
@@ -207,20 +137,11 @@ class Body extends StatelessWidget {
                 height: 10,
               ),
               Padding(
-                //height: 150,
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
-                  //maxLines: 4,
                   decoration: InputDecoration(
-                    //isDense: true,
                     hintText: 'Carbon Emission in Tonne',
                     border: OutlineInputBorder(),
-                    // suffixIcon: IconButton(
-                    //   onPressed: () {
-                    //     //clear whats currently in the textfield
-                    //     Null();
-                    //   },
-                    // ),
                   ),
                 ),
               ),
@@ -262,11 +183,6 @@ class Body extends StatelessWidget {
                     SizedBox(
                       width: 5.0,
                     ),
-                    // Text(
-                    //   "File Patent",
-                    //   style: TextStyle(color: Colors.white),
-                    // ),
-                    //Spacer(),
                     TextButton.icon(
                       onPressed: () {},
                       icon: Icon(
