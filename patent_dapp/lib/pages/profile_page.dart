@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:contactus/contactus.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:iconly/iconly.dart';
 
 class Ppage extends StatefulWidget {
   const Ppage({super.key});
@@ -17,83 +19,56 @@ class _PpageState extends State<Ppage> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: const Text('Your Profile'),
+        title:  Text('PROFILE', style: GoogleFonts.comfortaa( color: Colors.white,fontWeight: FontWeight.w500,fontSize: 30) ),
         backgroundColor: const Color.fromARGB(255, 15, 32, 39),
         leading: const BackButton(),
       ),
       body: SafeArea(
         child: Container(
+
+          
           decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Color.fromARGB(255, 15, 32, 39),
-                Color.fromARGB(255, 32, 58, 67),
-                Color.fromARGB(255, 44, 83, 100)
-              ],
-            ),
+            color: Colors.black87,
           ),
           child: Padding(
             padding: const EdgeInsets.all(32.0),
             child: ListView(
+              
+              
               children: [
+                Text('Personal Detail',style: GoogleFonts.arimo(color: Colors.white,fontSize: 20),),
+                
                 InkWell(
                   onTap: () {
                     // Navigator.push(context, MaterialPageRoute(builder: (context)=>));
                   },
-                  child: Container(
+                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
+                        gradient: LinearGradient(colors: [
+                          Color.fromARGB(255, 1, 115, 116),
+                          Color.fromARGB(255, 1, 162, 153),
+                        ],begin: Alignment.centerRight,
+                        end: Alignment.centerLeft ),
                         color: const Color.fromARGB(255, 173, 239, 209)),
-                    margin: const EdgeInsets.all(8),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(
-                          Icons.logout_outlined,
-                          size: 50,
-                          color: Colors.black,
+                    margin: const EdgeInsets.all(15),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children:  [
+                        SizedBox(width: 20,),
+                       const Icon(
+                          Icons.balance,
+                          size: 45,
+                          color: Colors.white,
                         ),
-                        Text(
-                          "Logout",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 30,
-                              fontFamily: 'Avenir'),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>));
-                  },
-                  child: Neumorphic(
-                    style: NeumorphicStyle(
-                        shape: NeumorphicShape.concave,
-                        boxShape: NeumorphicBoxShape.roundRect(
-                            BorderRadius.circular(30)),
-                        depth: 4,
-                        lightSource: LightSource.topLeft,
-                        shadowLightColor: Color.fromARGB(255, 114, 206, 237),
-                        color: Color.fromARGB(255, 114, 206, 237)),
-                    margin: const EdgeInsets.all(8),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(
-                          Icons.money,
-                          size: 50,
-                          color: Colors.black,
-                        ),
+                        SizedBox(width: 20,),
                         Text(
                           "Wallet Balance",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 30,
-                              fontFamily: 'Avenir'),
+                          style:GoogleFonts.jost (
+                              color: Colors.white,
+                              fontSize: 20,
+                              
+                              ),
                         )
                       ],
                     ),
@@ -103,25 +78,33 @@ class _PpageState extends State<Ppage> {
                   onTap: () {
                     // Navigator.push(context, MaterialPageRoute(builder: (context)=>));
                   },
-                  child: Container(
+                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
+                        gradient: LinearGradient(colors: [
+                          Color.fromARGB(255, 1, 115, 116),
+                          Color.fromARGB(255, 1, 162, 153),
+                        ],begin: Alignment.centerRight,
+                        end: Alignment.centerLeft ),
                         color: const Color.fromARGB(255, 173, 239, 209)),
-                    margin: const EdgeInsets.all(8),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(
-                          Icons.post_add_outlined,
-                          size: 50,
-                          color: Colors.black,
+                    margin: const EdgeInsets.all(15),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children:  [
+                        SizedBox(width: 20,),
+                       const Icon(
+                          Icons.wallet,
+                          size: 45,
+                          color: Colors.white,
                         ),
+                        SizedBox(width: 20,),
                         Text(
                           "Wallet Address",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 30,
-                              fontFamily: 'Avenir'),
+                          style:GoogleFonts.jost (
+                              color: Colors.white,
+                              fontSize: 20,
+                              
+                              ),
                         )
                       ],
                     ),
@@ -131,25 +114,75 @@ class _PpageState extends State<Ppage> {
                   onTap: () {
                     //Navigator.push(context, MaterialPageRoute(builder: (context)=>));
                   },
-                  child: Container(
+                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
+                        gradient: LinearGradient(colors: [
+                          Color.fromARGB(255, 1, 115, 116),
+                          Color.fromARGB(255, 1, 162, 153),
+                        ],begin: Alignment.centerRight,
+                        end: Alignment.centerLeft ),
                         color: const Color.fromARGB(255, 173, 239, 209)),
-                    margin: const EdgeInsets.all(8),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(
-                          Icons.history,
-                          size: 50,
-                          color: Colors.black,
+                    margin: const EdgeInsets.all(15),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children:  [
+                        SizedBox(width: 20,),
+                       const Icon(
+                          Icons.history_edu_outlined,
+                          size: 45,
+                          color: Colors.white,
                         ),
+                        SizedBox(width: 20,),
                         Text(
                           "Transaction History",
-                          style: TextStyle(
-                              color: Colors.black,
+                          style:GoogleFonts.jost (
+                              color: Colors.white,
+                              fontSize: 20,
+                              
+                              ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(height: 100,),
+                InkWell(
+                  onTap: () {
+                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>));
+                  },
+                  child: Container(
+                    width: 50,
+                   
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        
+
+
+                        gradient: LinearGradient(colors: [
+                          Color.fromARGB(255, 220, 28, 19),
+                          Color.fromARGB(255, 234, 76, 70),
+                        ],begin: Alignment.centerRight,
+                        end: Alignment.centerLeft ),
+                        color: const Color.fromARGB(255, 173, 239, 209)),
+                    margin: const EdgeInsets.all(60),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children:  [
+                        
+                       const Icon(
+                          Icons.logout_outlined,
+                          size: 50,
+                          color: Colors.white,
+                        ),
+                        SizedBox(width: 20,),
+                        Text(
+                          "Logout",
+                          style:GoogleFonts.jost (
+                              color: Colors.white,
                               fontSize: 30,
-                              fontFamily: 'Avenir'),
+                              
+                              ),
                         )
                       ],
                     ),
