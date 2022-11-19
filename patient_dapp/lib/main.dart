@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:patient_dapp/pages/profile_page.dart';
 import './pages/bottom_nav.dart';
-<<<<<<< HEAD
-import './pages/Ppage.dart';
-
-=======
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'dart:async';
@@ -12,7 +8,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:uni_links/uni_links.dart';
 // ...
->>>>>>> refs/remotes/origin/main
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -117,12 +112,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return MaterialApp(initialRoute: '/', routes: {
-      '/': (context) => const BottomNav(),
-      '/profile': (context) => const Ppage(),
-    });
-=======
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
@@ -131,6 +120,5 @@ class _MyAppState extends State<MyApp> {
         '/profile': (context) => const Ppage(),
       },
     );
->>>>>>> refs/remotes/origin/main
   }
 }

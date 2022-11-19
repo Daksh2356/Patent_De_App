@@ -163,8 +163,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
-=======
   freezed_annotation:
     dependency: transitive
     description:
@@ -193,7 +191,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.2"
->>>>>>> refs/remotes/origin/main
   js:
     dependency: transitive
     description:
@@ -201,8 +198,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.4"
-<<<<<<< HEAD
-=======
   json_annotation:
     dependency: transitive
     description:
@@ -210,7 +205,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.7.0"
->>>>>>> refs/remotes/origin/main
   line_icons:
     dependency: "direct main"
     description:
@@ -253,8 +247,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.2"
-<<<<<<< HEAD
-=======
   phantom_connect:
     dependency: "direct main"
     description:
@@ -269,7 +261,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.5.1"
->>>>>>> refs/remotes/origin/main
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -277,8 +268,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.3"
-<<<<<<< HEAD
-=======
   pointycastle:
     dependency: transitive
     description:
@@ -293,7 +282,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.0"
->>>>>>> refs/remotes/origin/main
   sky_engine:
     dependency: transitive
     description: flutter
@@ -348,8 +336,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.12"
-<<<<<<< HEAD
-=======
   typed_data:
     dependency: transitive
     description:
@@ -357,7 +343,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.1"
->>>>>>> refs/remotes/origin/main
   typicons_flutter:
     dependency: transitive
     description:
@@ -365,11 +350,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.5.0"
-<<<<<<< HEAD
-  url_launcher:
-    dependency: transitive
-    description:
-=======
   uni_links:
     dependency: "direct main"
     description:
@@ -394,7 +374,6 @@ packages:
   url_launcher:
     dependency: "direct main"
     description:
->>>>>>> refs/remotes/origin/main
       name: url_launcher
       url: "https://pub.dartlang.org"
     source: hosted
