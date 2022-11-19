@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>248706637356-6f7k8uif388dnjdoce1bn4v3qjhhufre.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.248706637356-6f7k8uif388dnjdoce1bn4v3qjhhufre</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>248706637356-2jkp2106jiio7e71m3sldcde7rdpcehg.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBmYBFW0k0HJJOV1gLwA6wZUITsTlcCNWs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>248706637356</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.patientDapp</string>
+	<key>PROJECT_ID</key>
+	<string>solana-hack-day</string>
+	<key>STORAGE_BUCKET</key>
+	<string>solana-hack-day.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:248706637356:ios:608511aab62cead30b3b89</string>
+</dict>
+</plist>
