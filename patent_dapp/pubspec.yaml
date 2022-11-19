@@ -45,10 +45,7 @@ dependencies:
   contactus: ^1.2.0
   glassmorphism: ^3.0.0
   google_fonts: ^3.0.1
-<<<<<<< HEAD
-  iconly: ^1.0.1
-=======
->>>>>>> refs/remotes/origin/main
+  
 
 
 dev_dependencies:
