@@ -23,14 +23,14 @@ class _CFCardState extends State<CFCard> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      margin: const EdgeInsets.all(5),
+      margin: const EdgeInsets.all(10),
       height: size.height * 0.25,
       width: size.width * 0.8,
       child: Column(
         children: [
           Container(
-            padding: const EdgeInsets.all(20),
-            margin: const EdgeInsets.all(9),
+            padding: const EdgeInsets.all(15),
+            margin: const EdgeInsets.all(5),
             decoration: BoxDecoration(
               border: Border.all(color: Colors.transparent),
               borderRadius: const BorderRadius.all(
