@@ -31,7 +31,7 @@ class Body extends StatelessWidget {
                         ),
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("images/project.jpg"),
+                          image: AssetImage("lib/images/project.jpg"),
                         ),
                       ),
                     ),

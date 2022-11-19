@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import './crowdfunding.dart';
 import '../widgets/patent_card.dart';
+import './filepatent.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -16,7 +17,7 @@ class _BottomNavState extends State<BottomNav>
 
   List children = [
     const Crowdfunding(),
-    const Crowdfunding(),
+    const Body(),
     PatentCard(),
   ];
 

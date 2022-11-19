@@ -7,6 +7,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:uni_links/uni_links.dart';
+import './pages/filepatent.dart';
 // ...
 
 void main() async {
@@ -115,9 +116,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
+      theme: ThemeData(
+          brightness: Brightness.dark, scaffoldBackgroundColor: Colors.black),
       routes: {
         '/': (context) => const BottomNav(),
         '/profile': (context) => const Ppage(),
+        '/patietent':(context) => const Body(),
       },
     );
   }
