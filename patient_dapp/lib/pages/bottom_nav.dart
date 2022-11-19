@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import './crowdfunding.dart';
-import '../components/patent_card.dart';
+import '../widgets/patent_card.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
