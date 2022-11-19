@@ -44,7 +44,7 @@ class _PpageState extends State<Ppage> {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.deepOrange),
+                        color: Color.fromARGB(255, 173, 239, 209)),
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -52,12 +52,12 @@ class _PpageState extends State<Ppage> {
                         Icon(
                           Icons.logout_outlined,
                           size: 50,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                         Text(
                           "Logout",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 30,
                               fontFamily: 'Avenir'),
                         )
@@ -72,7 +72,7 @@ class _PpageState extends State<Ppage> {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.lightGreen),
+                        color: Color.fromARGB(255, 173, 239, 209)),
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -80,12 +80,12 @@ class _PpageState extends State<Ppage> {
                         Icon(
                           Icons.money,
                           size: 50,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                         Text(
                           "Wallet Balance",
                           style: TextStyle(
-                              color: Colors.white,
+                             color: Colors.black,
                               fontSize: 30,
                               fontFamily: 'Avenir'),
                         )
@@ -100,7 +100,7 @@ class _PpageState extends State<Ppage> {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.deepPurpleAccent),
+                        color: Color.fromARGB(255, 173, 239, 209)),
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -108,12 +108,12 @@ class _PpageState extends State<Ppage> {
                         Icon(
                           Icons.post_add_outlined,
                           size: 50,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                         Text(
                           "Wallet Address",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontSize: 30,
                               fontFamily: 'Avenir'),
                         )
@@ -128,7 +128,7 @@ class _PpageState extends State<Ppage> {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.pinkAccent),
+                       color: Color.fromARGB(255, 173, 239, 209)),
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -136,12 +136,13 @@ class _PpageState extends State<Ppage> {
                         Icon(
                           Icons.history,
                           size: 50,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                         Text(
                           "Transaction History",
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.black
+                              ,
                               fontSize: 30,
                               fontFamily: 'Avenir'),
                         )
