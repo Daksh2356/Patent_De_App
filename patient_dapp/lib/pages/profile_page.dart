@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:contactus/contactus.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
@@ -23,17 +22,7 @@ class _PpageState extends State<Ppage> {
       ),
       body: SafeArea(
         child: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Color.fromARGB(255, 15, 32, 39),
-                Color.fromARGB(255, 32, 58, 67),
-                Color.fromARGB(255, 44, 83, 100)
-              ],
-            ),
-          ),
+          color: const Color.fromARGB(255, 18, 18, 18),
           child: Padding(
             padding: const EdgeInsets.all(32.0),
             child: ListView(

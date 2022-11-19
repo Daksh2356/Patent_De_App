@@ -1,5 +1,6 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CFCard extends StatefulWidget {
   const CFCard({super.key});
@@ -27,102 +28,112 @@ class _CFCardState extends State<CFCard> {
       width: size.width * 0.8,
       child: Column(
         children: [
-          Neumorphic(
-            style: NeumorphicStyle(
-              shape: NeumorphicShape.concave,
-              boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
-              depth: 4,
-              shadowLightColor: const Color.fromARGB(255, 212, 212, 212),
-              lightSource: LightSource.bottomRight,
-              color: const Color.fromARGB(255, 214, 213, 213),
-            ),
-            child: Container(
-              margin: const EdgeInsets.all(15),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'PATENT NAME',
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  const Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-                    style: TextStyle(
-                      fontSize: 10,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  InkWell(
-                    onTap: () {
-                      _launchUrl();
-                    },
-                    child: const Text(
-                      'White Paper',
-                      style: TextStyle(color: Colors.blue, fontSize: 10),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  Row(
-                    children: const [
-                      Text(
-                        'Uses Electricity',
-                        style: TextStyle(
-                          fontSize: 10,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Text(
-                        'Uses Fuel',
-                        style: TextStyle(
-                          fontSize: 10,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                            content: TextField(
-                              controller: textController,
-                              keyboardType: TextInputType.number,
-                              decoration: const InputDecoration(
-                                labelText: 'Enter the Amount',
-                              ),
-                            ),
-                            actions: [
-                              TextButton(
-                                onPressed: () => Navigator.pop(context),
-                                child: const Text(
-                                  'Confirm',
-                                  style: TextStyle(color: Colors.black),
-                                ),
-                              ),
-                            ],
-                          );
-                        },
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 36, 35, 35),
-                    ),
-                    child: const Text('Fund'),
-                  )
+          Container(
+            padding: const EdgeInsets.all(20),
+            margin: const EdgeInsets.all(9),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.transparent),
+              borderRadius: const BorderRadius.all(
+                Radius.circular(30),
+              ),
+              gradient: const LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 1, 115, 116),
+                  Color.fromARGB(255, 1, 162, 153),
                 ],
               ),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'PATENT NAME',
+                  style: GoogleFonts.jost(color: Colors.white),
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                const Text(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+                  style: TextStyle(
+                    fontSize: 10,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                InkWell(
+                  onTap: () {
+                    _launchUrl();
+                  },
+                  child: const Text(
+                    'White Paper',
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 115, 188, 248),
+                        fontSize: 10,
+                        decoration: (TextDecoration.underline)),
+                  ),
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                Row(
+                  children: const [
+                    Text(
+                      'Uses Electricity',
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Text(
+                      'Uses Fuel',
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          content: TextField(
+                            controller: textController,
+                            keyboardType: TextInputType.number,
+                            decoration: const InputDecoration(
+                              labelText: 'Enter the Amount',
+                            ),
+                          ),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(context),
+                              child: const Text(
+                                'Confirm',
+                                style: TextStyle(color: Colors.black),
+                              ),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 36, 35, 35),
+                  ),
+                  child: const Text('Fund'),
+                )
+              ],
             ),
           ),
         ],

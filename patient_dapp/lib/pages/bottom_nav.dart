@@ -23,12 +23,11 @@ class _BottomNavState extends State<BottomNav>
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromARGB(179, 0, 0, 0),
+      color: const Color.fromARGB(179, 0, 0, 0),
       child: Scaffold(
-        backgroundColor: const Color.fromARGB(179, 0, 0, 0),
+        backgroundColor: const Color.fromARGB(255, 18, 18, 18),
         body: Container(
-          decoration: BoxDecoration(
-              color: Colors.white30,
+          decoration: const BoxDecoration(
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20), topRight: Radius.circular(20))),
           child: children[selectedItem],
