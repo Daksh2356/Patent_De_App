@@ -15,13 +15,26 @@ class _PpageState extends State<Ppage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: Text('Your Profile'),
         backgroundColor: Colors.transparent,
+        
         leading: BackButton(),
       ),
       body: SafeArea(
         child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Color.fromARGB(255, 15, 32, 39),
+                Color.fromARGB(255, 32, 58, 67),
+                Color.fromARGB(255, 44, 83, 100)
+              ],
+            ),
+          ),
           child: Padding(
             padding: const EdgeInsets.all(32.0),
             child: ListView(
