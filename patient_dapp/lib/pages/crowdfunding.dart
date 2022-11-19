@@ -31,19 +31,7 @@ class _CrowdfundingState extends State<Crowdfunding> {
               },
               icon: const Icon(Icons.person))
         ],
-        // title: Row(
-        //   children: [
-        //     TextField(
-        //       decoration: InputDecoration(
-        //         fillColor: Colors.white,
-        //         filled: true,
-        //         border: OutlineInputBorder(
-        //           borderRadius: BorderRadius.circular(20),
-        //         ),
-        //       ),
-        //     ),
-        //   ],
-        // ),
+        title: const Text('ALL PATENTS'),
       ),
       backgroundColor: Colors.transparent,
       body: ListView.builder(
