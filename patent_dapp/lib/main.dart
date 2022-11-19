@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:patient_dapp/pages/profile_page.dart';
+import 'package:patent_dapp/pages/profile_page.dart';
 import './pages/bottom_nav.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+// import 'package:firebase_core/firebase_core.dart';
+
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -11,9 +11,7 @@ import 'package:uni_links/uni_links.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+
   runApp(const MyApp());
 }
 
