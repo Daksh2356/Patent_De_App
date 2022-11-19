@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:patient_dapp/pages/profile_page.dart';
 import './pages/bottom_nav.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -111,6 +112,13 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return const BottomNav();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const BottomNav(),
+        '/profile': (context) => const Ppage(),
+      },
+    );
   }
 }
