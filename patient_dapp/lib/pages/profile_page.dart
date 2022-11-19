@@ -17,7 +17,7 @@ class _PpageState extends State<Ppage> {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: const Text('Your Profile'),
-        backgroundColor: Colors.transparent,
+        backgroundColor: const Color.fromARGB(255, 15, 32, 39),
         leading: const BackButton(),
       ),
       body: SafeArea(
@@ -104,7 +104,7 @@ class _PpageState extends State<Ppage> {
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children:const [
+                      children: const [
                         Icon(
                           Icons.post_add_outlined,
                           size: 50,
@@ -129,10 +129,10 @@ class _PpageState extends State<Ppage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.pinkAccent),
-                    margin:const EdgeInsets.all(8),
+                    margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children:const [
+                      children: const [
                         Icon(
                           Icons.history,
                           size: 50,
