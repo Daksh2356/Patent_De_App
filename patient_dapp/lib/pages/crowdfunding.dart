@@ -14,7 +14,6 @@ class _CrowdfundingState extends State<Crowdfunding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
