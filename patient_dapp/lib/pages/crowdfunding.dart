@@ -19,6 +19,12 @@ class _CrowdfundingState extends State<Crowdfunding> {
         elevation: 0,
         actions: <Widget>[
           IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.search,
+            ),
+          ),
+          IconButton(
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: ((context) => const Ppage())));
