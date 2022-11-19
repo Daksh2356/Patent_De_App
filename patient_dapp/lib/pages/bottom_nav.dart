@@ -17,7 +17,7 @@ class _BottomNavState extends State<BottomNav>
   List children = [
     const Crowdfunding(),
     const Crowdfunding(),
-    const PatentCard(),
+    PatentCard(),
   ];
 
   @override

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:contactus/contactus.dart';
 
 class Ppage extends StatefulWidget {
@@ -17,14 +16,13 @@ class _PpageState extends State<Ppage> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text('Your Profile'),
+        title: const Text('Your Profile'),
         backgroundColor: Colors.transparent,
-        
-        leading: BackButton(),
+        leading: const BackButton(),
       ),
       body: SafeArea(
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -47,10 +45,10 @@ class _PpageState extends State<Ppage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.deepOrange),
-                    margin: EdgeInsets.all(8),
+                    margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.logout_outlined,
                           size: 50,
@@ -75,10 +73,10 @@ class _PpageState extends State<Ppage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.lightGreen),
-                    margin: EdgeInsets.all(8),
+                    margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.money,
                           size: 50,
@@ -103,10 +101,10 @@ class _PpageState extends State<Ppage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.deepPurpleAccent),
-                    margin: EdgeInsets.all(8),
+                    margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children:const [
                         Icon(
                           Icons.post_add_outlined,
                           size: 50,
@@ -131,10 +129,10 @@ class _PpageState extends State<Ppage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.pinkAccent),
-                    margin: EdgeInsets.all(8),
+                    margin:const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children:const [
                         Icon(
                           Icons.history,
                           size: 50,
