@@ -22,11 +22,17 @@ class _BottomNavState extends State<BottomNav>
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 30, 30, 30),
-        body: children[selectedItem],
+    return Container(
+      color: Color.fromARGB(179, 0, 0, 0),
+      child: Scaffold(
+        backgroundColor: const Color.fromARGB(179, 0, 0, 0),
+        body: Container(
+          decoration: BoxDecoration(
+              color: Colors.white30,
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+          child: children[selectedItem],
+        ),
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: const Color.fromARGB(255, 27, 26, 26),
           iconSize: 25,

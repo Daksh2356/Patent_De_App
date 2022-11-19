@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:contactus/contactus.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class Ppage extends StatefulWidget {
   const Ppage({super.key});
@@ -44,7 +45,7 @@ class _PpageState extends State<Ppage> {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Color.fromARGB(255, 173, 239, 209)),
+                        color: const Color.fromARGB(255, 173, 239, 209)),
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -69,10 +70,15 @@ class _PpageState extends State<Ppage> {
                   onTap: () {
                     // Navigator.push(context, MaterialPageRoute(builder: (context)=>));
                   },
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Color.fromARGB(255, 173, 239, 209)),
+                  child: Neumorphic(
+                    style: NeumorphicStyle(
+                        shape: NeumorphicShape.concave,
+                        boxShape: NeumorphicBoxShape.roundRect(
+                            BorderRadius.circular(30)),
+                        depth: 4,
+                        lightSource: LightSource.topLeft,
+                        shadowLightColor: Color.fromARGB(255, 114, 206, 237),
+                        color: Color.fromARGB(255, 114, 206, 237)),
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -85,7 +91,7 @@ class _PpageState extends State<Ppage> {
                         Text(
                           "Wallet Balance",
                           style: TextStyle(
-                             color: Colors.black,
+                              color: Colors.black,
                               fontSize: 30,
                               fontFamily: 'Avenir'),
                         )
@@ -100,7 +106,7 @@ class _PpageState extends State<Ppage> {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Color.fromARGB(255, 173, 239, 209)),
+                        color: const Color.fromARGB(255, 173, 239, 209)),
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -128,7 +134,7 @@ class _PpageState extends State<Ppage> {
                   child: Container(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                       color: Color.fromARGB(255, 173, 239, 209)),
+                        color: const Color.fromARGB(255, 173, 239, 209)),
                     margin: const EdgeInsets.all(8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -141,8 +147,7 @@ class _PpageState extends State<Ppage> {
                         Text(
                           "Transaction History",
                           style: TextStyle(
-                              color: Colors.black
-                              ,
+                              color: Colors.black,
                               fontSize: 30,
                               fontFamily: 'Avenir'),
                         )

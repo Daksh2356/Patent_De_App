@@ -32,7 +32,7 @@ class _CFCardState extends State<CFCard> {
               shape: NeumorphicShape.concave,
               boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
               depth: 4,
-              shadowLightColor: Color.fromARGB(255, 212, 212, 212),
+              shadowLightColor: const Color.fromARGB(255, 212, 212, 212),
               lightSource: LightSource.bottomRight,
               color: const Color.fromARGB(255, 214, 213, 213),
             ),
