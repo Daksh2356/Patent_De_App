@@ -36,7 +36,13 @@ class PatentCard extends StatelessWidget {
         //   depth: 6,
         // ),
         Scaffold(
-            body: ListView.builder(
+            backgroundColor: const Color.fromARGB(255, 30, 30, 30),
+            body: GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 5.0,
+                  mainAxisSpacing: 5.0,
+                ),
                 itemCount: 10,
                 itemBuilder: (BuildContext context, int index) {
                   return Neumorphic(
@@ -46,51 +52,43 @@ class PatentCard extends StatelessWidget {
                             BorderRadius.circular(10)),
                         depth: 8,
                         lightSource: LightSource.topLeft,
-                        color: const Color.fromARGB(255, 158, 12, 12)),
+                        color: const Color.fromARGB(255, 214, 213, 213)),
                     duration: const Duration(milliseconds: 100),
                     margin: const EdgeInsets.all(10),
                     padding: const EdgeInsets.all(10),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                       const Text(
+                        const Text(
                           'Hello world !!',
                           style: TextStyle(
-                            color: Color.fromARGB(251, 134, 230, 9),
                             fontWeight: FontWeight.bold,
-                            fontSize: 24,
-                            shadows: [
-                              Shadow(
-                                  color: Color.fromARGB(255, 121, 215, 137),
-                                  offset: Offset(-1.0, 5.0),
-                                  blurRadius: 3.0),
-                            ],
                           ),
                         ),
                         ElevatedButton(
                             onPressed: () {
                               con();
                             },
-                            child:const Text("phantom")),
-                       const SizedBox(
-                          height: 10,
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor:
+                                    const Color.fromARGB(255, 36, 35, 35)),
+                            child: const Text("phantom")),
+                        const SizedBox(
+                          height: 4,
                         ),
-                       const Text(
+                        const Text(
                           'lorem ipsum',
                           style: TextStyle(
-                            color: Color.fromARGB(251, 134, 230, 9),
                             fontWeight: FontWeight.bold,
-                            fontSize: 18,
                           ),
                         ),
-                       const SizedBox(
-                          height: 10,
+                        const SizedBox(
+                          height: 4,
                         ),
-                       const Text(
+                        const Text(
                           'Hello World !!',
                           style: TextStyle(
-                            color: Color.fromARGB(251, 134, 230, 9),
                             fontWeight: FontWeight.bold,
-                            fontSize: 14,
                           ),
                         )
                       ],
