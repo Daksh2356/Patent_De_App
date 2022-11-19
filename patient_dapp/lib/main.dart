@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import './pages/bottom_nav.dart';
+import './pages/Ppage.dart';
+
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,6 +18,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const BottomNav();
+    return MaterialApp(initialRoute: '/', routes: {
+      '/': (context) => const BottomNav(),
+      '/profile': (context) => const Ppage(),
+    });
   }
 }
