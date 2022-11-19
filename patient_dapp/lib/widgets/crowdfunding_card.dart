@@ -22,7 +22,7 @@ class _CFCardState extends State<CFCard> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      margin: const EdgeInsets.all(20),
+      margin: const EdgeInsets.all(5),
       height: size.height * 0.25,
       width: size.width * 0.8,
       child: Column(
@@ -32,7 +32,7 @@ class _CFCardState extends State<CFCard> {
               shape: NeumorphicShape.concave,
               boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(12)),
               depth: 4,
-              shadowLightColor: const Color.fromARGB(255, 114, 114, 114),
+              shadowLightColor: Color.fromARGB(255, 212, 212, 212),
               lightSource: LightSource.bottomRight,
               color: const Color.fromARGB(255, 214, 213, 213),
             ),

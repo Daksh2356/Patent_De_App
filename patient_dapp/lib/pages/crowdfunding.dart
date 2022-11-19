@@ -14,7 +14,6 @@ class _CrowdfundingState extends State<Crowdfunding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -32,19 +31,7 @@ class _CrowdfundingState extends State<Crowdfunding> {
               },
               icon: const Icon(Icons.person))
         ],
-        // title: Row(
-        //   children: [
-        //     TextField(
-        //       decoration: InputDecoration(
-        //         fillColor: Colors.white,
-        //         filled: true,
-        //         border: OutlineInputBorder(
-        //           borderRadius: BorderRadius.circular(20),
-        //         ),
-        //       ),
-        //     ),
-        //   ],
-        // ),
+        title: const Text('ALL PATENTS'),
       ),
       backgroundColor: Colors.transparent,
       body: ListView.builder(

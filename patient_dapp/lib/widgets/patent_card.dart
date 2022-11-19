@@ -59,38 +59,47 @@ class PatentCard extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
+                        const SizedBox(
+                          height: 5,
+                        ),
                         const Text(
-                          'Hello world !!',
+                          'PATENT NAME',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 10,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const Text(
+                          'White Paper',
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.blue,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
                         ),
                         ElevatedButton(
-                            onPressed: () {
-                              con();
-                            },
-                            style: ElevatedButton.styleFrom(
-                                backgroundColor:
-                                    const Color.fromARGB(255, 36, 35, 35)),
-                            child: const Text("phantom")),
-                        const SizedBox(
-                          height: 4,
+                          onPressed: () {
+                            con();
+                          },
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor:
+                                  const Color.fromARGB(255, 36, 35, 35)),
+                          child: const Text("phantom"),
                         ),
-                        const Text(
-                          'lorem ipsum',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 4,
-                        ),
-                        const Text(
-                          'Hello World !!',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )
                       ],
                     ),
                   );
