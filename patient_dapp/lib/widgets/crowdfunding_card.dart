@@ -9,6 +9,13 @@ class CFCard extends StatefulWidget {
 }
 
 class _CFCardState extends State<CFCard> {
+  final Uri _url = Uri.parse('https://flutter.dev');
+  Future<void> _launchUrl() async {
+    if (!await launchUrl(_url)) {
+      throw 'Could not launch $_url';
+    }
+  }
+
   final textController = TextEditingController();
 
   @override
@@ -20,13 +27,6 @@ class _CFCardState extends State<CFCard> {
       width: size.width * 0.8,
       child: Column(
         children: [
-          // TextField(
-          //   decoration: InputDecoration(
-          //     border: OutlineInputBorder(
-          //       borderRadius: BorderRadius.circular(20),
-          //     ),
-          //   ),
-          // ),
           Neumorphic(
             style: NeumorphicStyle(
               shape: NeumorphicShape.concave,
@@ -58,7 +58,9 @@ class _CFCardState extends State<CFCard> {
                       height: 5,
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        _launchUrl();
+                      },
                       child: const Text(
                         'White Paper',
                         style: TextStyle(color: Colors.blue, fontSize: 10),

@@ -1,7 +1,23 @@
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:phantom_connect/phantom_connect.dart';
 
 class PatentCard extends StatelessWidget {
-  const PatentCard({super.key});
+  PatentCard({super.key});
+
+  final PhantomConnect urli = PhantomConnect(
+      appUrl: "https://protodap.page.link",
+      deepLink: "https://protodap.page.link");
+
+  void con() async {
+    final urlc = urli.generateConnectUri(cluster: "devnet", redirect: '/tobR');
+    if (await canLaunchUrl(urlc)) {
+      launchUrl(
+        urlc,
+        mode: LaunchMode.externalNonBrowserApplication,
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +51,8 @@ class PatentCard extends StatelessWidget {
                     margin: const EdgeInsets.all(10),
                     padding: const EdgeInsets.all(10),
                     child: Column(
-                      children: const [
-                        Text(
+                      children: [
+                       const Text(
                           'Hello world !!',
                           style: TextStyle(
                             color: Color.fromARGB(251, 134, 230, 9),
@@ -50,10 +66,15 @@ class PatentCard extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        ElevatedButton(
+                            onPressed: () {
+                              con();
+                            },
+                            child:const Text("phantom")),
+                       const SizedBox(
                           height: 10,
                         ),
-                        Text(
+                       const Text(
                           'lorem ipsum',
                           style: TextStyle(
                             color: Color.fromARGB(251, 134, 230, 9),
@@ -61,10 +82,10 @@ class PatentCard extends StatelessWidget {
                             fontSize: 18,
                           ),
                         ),
-                        SizedBox(
+                       const SizedBox(
                           height: 10,
                         ),
-                        Text(
+                       const Text(
                           'Hello World !!',
                           style: TextStyle(
                             color: Color.fromARGB(251, 134, 230, 9),
