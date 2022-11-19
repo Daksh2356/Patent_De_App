@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:contactus/contactus.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,11 +24,7 @@ class _PpageState extends State<Ppage> {
       ),
       body: SafeArea(
         child: Container(
-
-          
-          decoration: const BoxDecoration(
-            color: Colors.black87,
-          ),
+          color: const Color.fromARGB(255, 18, 18, 18),
           child: Padding(
             padding: const EdgeInsets.all(32.0),
             child: ListView(
